@@ -27,7 +27,6 @@ public class outfit{
                newItems[i] = this.items[i];
             }
         newItems[this.items.length +1] = item;
-        this.items = newItems;
-        }        
+        this.items = newItems;        
     }
 }
