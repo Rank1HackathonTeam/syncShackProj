@@ -43,15 +43,12 @@
             <h3><span class="typcn typcn-lightbulb icon"></span>The Outfit Maker</h3>
             <div class="lovely">
             <img class="image" src="https://media.istockphoto.com/vectors/front-view-human-body-silhouette-of-a-teenager-gender-neutral-person-vector-id1212330784?k=20&m=1212330784&s=612x612&w=0&h=9VKOgSGpnqqG7GZAML8HTIMPryoWE5O654okEZ9zLXk=">
-            <div class="slider">
+            <div class="slider" id="upper-slider">
                 <span id="slide-1"></span>
                 <span id="slide-2"></span>
                 <span id="slide-3"></span>
-                <div class="image-container">
-                  <script src="shirtSet.ts"></script>
-                  <img src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bf78.png" class="slide" width="500" height="300" />
-                  <img src="/uploads/media/default/0001/03/b7d624354d5fa22e38b0ab1f9b905fb08ccc6a05.jpeg" class="slide" width="500" height="300" />
-                  <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" class="slide" width="500" height="300" />
+                <div class="image-container" id="shirt-container">
+
                 </div>
                 <div class="buttons">
                   <a href="#slide-1"></a>
@@ -59,10 +56,25 @@
                   <a href="#slide-3"></a>
                 </div>
               </div>
+              <script src="shirtSet.ts"></script>
             </div>
         </div>
-        </div>
-
+        <div class="add-items">
+        <form id="add-shirt">
+          <fieldset>
+            <legend> Add shirt </legend>
+            <input type="text" name="img_link" size = 30>
+          </fieldset>
+          <input type="submit" id="submit">
+        </form>
+        <form id="add-pants">
+          <fieldset>
+            <legend> Add pants </legend>
+            <input type="text" name="img_link" size = 30>
+          </fieldset>
+          <input type="submit" id="submit">
+        </form>
+        </div> 
   </section>
   
   

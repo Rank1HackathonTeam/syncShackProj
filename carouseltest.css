@@ -523,7 +523,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
     margin: auto;
     display: block;
 }
-.slider {
+#upper-slider {
     width: 500px;
     height: 300px;
     
@@ -537,7 +537,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
     left: 65%;
     top: 70%;
   }
-  .image-container {
+
+  #shirt-container {
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
@@ -549,19 +550,29 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
     -o-transition: left 2s;
     transition: left 2s;
   }
+  
   .slide {
     float: left;
     margin: 0px;
     padding: 0px;
     position: relative;
   }
-  #slide-1:target ~ .image-container {
+  #slide-1:target ~ #shirt-container {
     left: 0px;
   }
-  #slide-2:target ~ .image-container {
+  #slide-2:target ~ #shirt-container {
     left: -500px;
   }
-  #slide-3:target ~ .image-container {
+  #slide-3:target ~ #shirt-container {
+    left: -1000px;
+  }
+  #slide-a1:target ~ #pants-container {
+    left: 0px;
+  }
+  #slide-a2:target ~ #pants-container {
+    left: -500px;
+  }
+  #slide-a3:target ~ #pants-container {
     left: -1000px;
   }
   .buttons {
@@ -580,4 +591,14 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
     width: 300px;
     height: 300px;
     position: relative;
+ }
+ #add-shirt{
+	position: absolute;
+	bottom: -150%;
+	left: 20%;
+ }
+ #add-pants{
+	position: absolute;
+	bottom: -150%;
+	left: 50%;
  }
