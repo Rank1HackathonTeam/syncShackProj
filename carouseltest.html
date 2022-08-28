@@ -60,17 +60,14 @@
             </div>
         </div>
         <div class="add-items">
-        <form id="add-shirt">
+        <form id="add-items" autocomplete="off">
           <fieldset>
-            <legend> Add shirt </legend>
-            <input type="text" name="img_link" size = 30>
-          </fieldset>
-          <input type="submit" id="submit">
-        </form>
-        <form id="add-pants">
-          <fieldset>
-            <legend> Add pants </legend>
-            <input type="text" name="img_link" size = 30>
+            <legend> Add item </legend>
+            <input type="text" name="img_link" size = 30 id="shirt_link">
+            <input type="radio" id="shirt" name="newItem" value="shirt">
+            <label for="shirt">shirt</label>
+            <input type="radio" id="pants" name="newItem" value="pants">
+            <label for="pants">pants</label><br>
           </fieldset>
           <input type="submit" id="submit">
         </form>
